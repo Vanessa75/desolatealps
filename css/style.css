@@ -1,0 +1,464 @@
+.row{
+    border: 1px
+}
+
+body {
+    margin: 0px;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    max-height: 40px;
+    background-color: white; 
+    z-index: 100;
+    text-align: center;
+    padding: 7;
+    overflow: hidden;
+    display:block;
+}
+
+li{
+    display: inline;
+    padding: 100;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-family: "helvetica";
+    font-size: 12;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#head {
+    height: 900;
+    position: relative;
+    text-align: center;
+    background-image: url("../images/Alps.jpg");
+    background-attachment: fixed;
+    width: 100vw;
+}
+
+#head h1{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    font-family: "garamond";
+    color: floralwhite;
+    font-size: 50px;
+}
+
+#head h5{
+    position: absolute;
+    top: 420;
+    width: 100%;
+    font-family: "helvetica"; 
+    color: floralwhite;
+    font-size: 12px;
+}
+
+.u-max-full-width{
+    width: 100%;
+}
+
+#introduction{
+    margin:auto;
+    max-width: 700px;
+    max-height: 800px;
+    padding: 60px;
+}
+
+#introduction p{
+    font-family: "garamond";
+    max-width: 700px;
+    font-size: 18;
+}
+
+#content {
+    margin:auto;
+    max-width: 700px;
+    height: 400px;
+    padding: 60px;
+    margin: auto;
+}
+
+#content p {
+    font-family: "garamond";
+    max-width: 700px;
+    font-size: 18;
+}
+
+.chapter {
+  height: 850px;
+  max-width: 100vw;
+  background-color: black;
+  background-attachment: fixed;
+  
+}
+
+
+.chapter h5{
+  text-align: center;
+    color: white;
+    font-family: "helvetica";
+    padding-top: 350px;
+    margin: auto;
+    
+}
+
+.chapter h3{
+    text-align: center;
+    color: white;
+    font-family: "garamond";
+    max-width: 600px;
+    
+}
+
+#data{
+    max-width: 100vw;
+    height: 800px;
+    margin-top:100px;
+    margin-bottom:100px;
+}
+
+.ruotato{
+    -webkit-transform:rotate(-90deg);
+    -moz-transform:rotate(-90deg);
+    position: absolute;
+    margin-top:380;
+    margin-left:-300
+}
+
+.ruotato p{
+    font-family: "helvetica";
+    font-size: 18px;
+    cursor: pointer;
+    color: black;
+    display: inline;
+}
+
+
+.ruotato p:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.ruotato p:active{
+    text-decoration: underline;
+    color: black;
+}
+
+
+.ruotato ul li{
+    padding: 0;
+    margin: 50;
+    
+}
+
+.immagini img{
+    max-width: 900px;
+}
+
+
+.legenda p{
+    font-size: 14px;
+    font-family: "helvetica";
+    cursor: pointer;
+    display: inline;
+    color: black;
+    
+}
+
+
+.legenda p:hover{
+    text-decoration: underline;
+    color: black;  
+    
+}
+
+.legenda p:active{
+    text-decoration: underline;
+}
+
+#legenda1 ul{
+    position: absolute;
+    margin-top: 700;
+    margin-left: 950;
+    display:none;
+    
+    
+    
+}
+
+#legenda1 ul li{
+    margin:20;
+    padding:0;
+}
+
+#legenda2 ul{
+    position: absolute;
+    margin-top: 700;
+    margin-left: 870;
+    display:none;
+}
+
+#legenda2 ul li{
+    margin:20;
+    padding:0;
+
+}
+
+
+#legenda3 ul{
+    position: absolute;
+    margin-top: 700;
+    margin-left: 930;
+    display:none;
+}
+
+#legenda3 ul li{
+    margin:20;
+    padding:0;
+}
+
+
+
+/*.slidercontainer {
+    width: 100%;
+    text-align: right;
+}
+
+.slider{
+    -webkit-appearance: none;
+    appearance:none;
+    width: 300;
+    height: 25px;
+    background: ;
+    outline: none;
+    transition: opacity 0.2s;
+}
+
+.slider:hover{
+    opacity: 0.7;
+}
+.slider::-webkit-slider-thumb{
+    -webkit-appearance:none;
+    cursor:pointer;
+    background: black;
+    border-radius: ; 
+    width: 10%;
+    height: 8px; 
+    
+} */
+
+
+h6 {
+    font-size: 09px;
+    text-align: left;
+}
+
+
+#names{
+    max-height: 1000px;
+    background-color: black;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: space-around;
+    padding: 50;
+}
+
+#names h5{
+    font-family: "garamond";
+    color: white;
+    opacity:0.15;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+#names h5:hover{
+    opacity: 1;
+}
+
+#names p{
+    font-family: "helvetica";
+    font-size: 12;
+    margin: auto;
+    color: white;
+    opacity:0;
+    transition: all 3s;
+    cursor: pointer;
+}
+
+
+#cities{
+    height:7800;
+    
+}
+
+#cities img{
+    width: 600;
+    margin-top: 60;
+    margin-bottom:-40;
+    margin-left: -120
+    
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+
+}
+
+div.sticky p{
+    font-family: "garamond";
+    max-width: 600px;
+    font-size: 18;
+    padding: 60;
+    margin-left: -50;
+    
+}
+
+#chapter3{
+    margin-top: 60;
+}
+
+#gallery {
+    max-height: 2500;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	align-content: center;
+    margin-top: 60;
+    margin-bottom: 60;
+    margin-left: 15px;
+    
+}
+
+.thumbnail {
+    width: 280;
+    height: 200;
+    
+}
+
+.thumbnail img{
+    width:220;
+    height: 160;
+    margin:20;
+    position: relative;
+    opacity: 1;
+    z-index: 10;
+       
+}
+
+.thumbnail img:hover{
+    opacity: 0;
+    transition: 0s;
+}
+
+.thumbnail p{
+    width: 220;
+    height:160;
+    position: relative;
+    top: -203px;
+    margin:20;
+    font-size: 12;
+}
+
+
+#records{
+    max-height: 2000px;
+    margin-top: 500px;
+    margin-bottom: 300px;
+    
+}
+
+#records p{
+    font-family: "garamond";
+    padding-top: 30;
+    font-size: 18;
+    min-width: 400px;
+}
+
+#records img{
+    max-width: 400px;
+    padding-left:200;
+}
+
+#testimonianza2{
+    margin-top:1000;
+   
+}
+
+.img-container{
+    
+    height: 500;
+    overflow: hidden;
+    position: relative;
+    width:600;
+    margin: 150;
+}
+
+.img-container img{
+    width: 600;
+    height: 500;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    opacity:0;
+    position: absolute;
+    top:0;
+    z-index: -1;
+}
+
+.img-container img.next{
+    opacity: 1;
+    z-index: 1;
+
+}
+
+.img-container img.prev{
+    opacity: 1;
+    z-index: 1;
+    
+}
+
+.img-container img.fade-out{
+    opacity: 0;
+    transition: visibility 0s, opacity 0s linear;
+    visibility: hidden;
+}
+
+div{
+    border: 1px solid red;
+}
+
+
+@media (min-width: 320px){
+    .menu{
+        display: none;
+    }
+    
+
+    
+    
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+    .menu{
+        display: block;
+    }
+}
+
+
+
+
