@@ -52,11 +52,13 @@
         </div>
         <div class="column one">&nbsp;</div>
     </div>
+</div>
     
     <!------------- CHAPTER 1 --------------->   
     
     <div>
-        <div class="chapter" id="chapter1">
+        <div class="container u-max-full-width">
+        <div class="row" id="chapter">
             <div class="columns four">&nbsp;</div>
             <div class="columns four">
                 <h5> <i>Chapter I</i></h5>
@@ -67,7 +69,7 @@
      </div>
     
     
-    
+<div class="container">
     <div class="row" id="content">
         <div class="columns one">&nbsp;</div>
         <div class="columns ten">
@@ -79,86 +81,51 @@
         </div>
         <div class="column one">&nbsp;</div>
     </div>
-     
+ </div>    
     
-     <div>
-        <div class="row" id="data">
-            <div class="ruotato">
-                <ul>
-                    <li class="pop-gro"><p>population growth rate</p></li>
-                
-                    <li class="pop-den"><p>population density</p></li>
-                
-                    <li class="dem-dec"><p>demographic decline </p></li>
-                </ul>
-            </div>
-            
-            <div class="immagini">
-                <div class="one column">&nbsp;</div>
-                <div class="ten columns"> 
-                    <img src="images/b&n.jpg"></div>
-                <div class="one column">&nbsp;</div>
-            </div>
-            
-            <div class="legenda" id="legenda1">
-                    <ul>
-                        <li class="data1"><p>1951-1981</p></li>
-                   
-                        <li class="data2"><p>1981-2000</p></li>
-                    
-                        <li class="data3"><p>2000-2012</p></li>
-                    </ul>
-            </div>
-            
-            <div class="legenda" id="legenda2">
-                <ul>
-                    
-                    <li class="10">
-                    <p> < 10 </p>
-                    </li>
-                    <li class="10-50">
-                    <p> > 10-50 </p>
-                    </li>
-                    <li class="50-100">
-                    <p> > 50-100 </p>
-                    </li>
-                    <li class="100-500">
-                    <p> > 100-500</p>
-                    </li>
-                    <li class="500">
-                    <p> > 500</p>
-                    </li>
-                </ul>
-            </div>
-           
-            
-            
-            <div class="legenda" id="legenda3">
+<div class="container" id="data">
+    <div class="row" id="ruotato">
             <ul>
-                <li class="5-1">
-                <p> < -5% - > 1% </p>
-                </li>
-                <li class="0-1">
-                <p> > 0% - 1%</p>
-                </li>
-                <li class="1-5">
-                <p> >1% - >5%</p>
-                </li>
-                
-                </ul>
+                <li class="pop-gro"><p>population growth rate</p></li>
+                <li class="pop-den"><p>population density</p></li>
+                <li class="dem-dec"><p>demographic decline </p></li>
+            </ul>
+    </div>
+    
             
+    <div class="immagini">
+         <div class="one column">&nbsp;</div>
+         <div class="ten columns"> 
+                <img src="images/b&n.jpg"></div>
+         <div class="one column">&nbsp;</div>
+    </div>
+            
+    <div class="legenda" id="legenda1">
+        <ul>
+            <li class="data1"><p>1951-1981</p></li>
+            <li class="data2"><p>1981-2000</p></li>
+            <li class="data3"><p>2000-2012</p></li>
+        </ul>
             </div>
             
-
-        </div>
+    <div class="legenda" id="legenda2">
+        <ul>
+            <li class="10"><p> < 10 </p></li>
+            <li class="10-50"><p> > 10-50 </p></li>
+            <li class="50-100"><p> > 50-100 </p></li>
+            <li class="100-500"><p> > 100-500</p></li>
+            <li class="500"><p> > 500</p></li>
+        </ul>
+    </div>
+           
+    <div class="legenda" id="legenda3">
+        <ul>
+            <li class="5-1"><p> < -5% - > 1% </p></li>
+            <li class="0-1"><p> > 0% - 1%</p></li>
+            <li class="1-5"><p> >1% - >5%</p></li>
+        </ul>
     </div>
 </div>
-    
-      <!-- <div class="slidercontainer">
-                <img id="img" src="">
-                <input onchange="setImage(this)" type="range" min="0" max="100" value="0" step="1"
-                class="slider" id="sliderange" />
-            </div> -->
     
     
 <script>
@@ -168,7 +135,7 @@
            $('#legenda1 ul').css('display', 'block');
            $('#legenda2 ul').css('display', 'none');
            $('#legenda3 ul').css('display', 'none');
-           $('.immagini img').attr('src','images/b&n.jpg');
+           $('#immagini img').attr('src','images/b&n.jpg');
            
            $('pop-gro').css("color", 'light-grey');
            $('pop-den').css("color", 'light-grey');
@@ -180,7 +147,7 @@
            $('#legenda1 ul').css('display', 'none');
             $('#legenda2 ul').css('display', 'block');
            $('#legenda3 ul').css('display', 'none');
-           $('.immagini img').attr('src','images/b&n.jpg');
+           $('#immagini img').attr('src','images/b&n.jpg');
            
            $('pop-gro').css("color", "light-grey");
             $('dem-dec').css("color", "light-grey");
@@ -190,7 +157,7 @@
            $('#legenda1 ul').css('display', 'none');
            $('#legenda2 ul').css('display', 'none');
            $('#legenda3 ul').css('display', 'block');
-           $('.immagini img').attr('src','images/b&n.jpg');
+           $('#immagini img').attr('src','images/b&n.jpg');
            
             $('pop-den').css("color", "light-grey");
             $('dem-dec').css("color", "light-grey");
@@ -202,20 +169,20 @@
  <script>
    $(document).ready(function() {
        $('.data1').click(function() {
-            $('.immagini img').attr('src','images/1951-1981.jpg');
+            $('#immagini img').attr('src','images/1951-1981.jpg');
             $('data2').css("color", "light-grey");
             $('data3').css("color", "light-grey");
       
        });
     
        $('.data2').click(function() {
-           $('.immagini img').attr('src', 'images/1981-2000.jpg');
+           $('#immagini img').attr('src', 'images/1981-2000.jpg');
            $('data1').css("color", "light-grey");
             $('data3').css("color", "light-grey");
        });
        
        $('.data3').click(function() {
-           $('.immagini img').attr('src', 'images/2000-2012.jpg');
+           $('#immagini img').attr('src', 'images/2000-2012.jpg');
            $('data1').css("color", "light-grey");
            $('data2').css("color", "light-grey");
        })
@@ -293,8 +260,8 @@
   <!------------- CHAPTER 2 --------------->       
     
 <div class="container u-max-full-width">
-    <div>
-        <div class="chapter" id="chapter2">
+    
+        <div class="row" id="chapter">
             <div class="columns four">&nbsp;</div>
             <div class="columns four">
                 <h5> <i>Chapter II</i></h5>
@@ -302,9 +269,10 @@
             </div>
             <div class="columns four">&nbsp;</div>
         </div>
-     </div>
+     
 </div>
-    
+
+<div class="container u-max-full-width">
 <div class="row" id="names">
     
     <h5>Antrona
@@ -449,6 +417,7 @@
     <p><i>abandonment cause: </i>depopulation</p></h5>
 
 </div>
+</div>
 
     
 <script>
@@ -503,8 +472,9 @@
     
    <!------------- CHAPTER 3 --------------->  
     
-    
-<div class="chapter" id="chapter3">
+
+<div class="container u-max-full-width">        
+<div class="row" id="chapter">
             <div class="columns four">&nbsp;</div>
             <div class="columns four">
                 <h5> <i>Chapter III</i></h5>
@@ -512,9 +482,10 @@
             </div>
             <div class="columns four">&nbsp;</div>
 </div>
+</div>
         
-    
-<div class="row" id="gallery">
+<div class="container u-max-full-width">    
+    <div class="row" id="gallery">
     
     <div class="thumbnail">
         <img src="images/fieno.png">
@@ -600,6 +571,7 @@
          <p><b>Alpeggio /</b> agro-zootechnical activity that takes place in the mountains during the summer months between a minimum altitude of 600 m a.s.l. and a maximum of 2500-2700 <i> montication.</i></p>
     </div>
         
+    </div>
 </div>
     
     
@@ -621,9 +593,10 @@
         
 </script>
 
-<div class="row" id="records">
-    <div class="columns one">&nbsp;</div>
-    <div class="columns three">
+<div class="container u-max-full-width"> 
+    <div class="row" id="records">
+        <div class="columns one">&nbsp;</div>
+        <div class="columns three">
         
         <audio id="testimonianza1" controls width="250" type="audio/mp3" src="images/Mirella%20tagliato.mp3" ></audio>
         <p> <b>Mirella, born in 1940, Collina (UD)</b><br>
@@ -641,18 +614,13 @@
         <p><b> Annette, born in 1928, Milano</b><br>
         I graduated in 1947 and that time they proclaimed the first contest due to the fact that all the teachers who worked during the war had not a tenured position. I participated to this contest and by combination I won, I was the 575th. Only the most uncomfortable Carnia’s places remained, for example Buttea, because at that time we had to go always by walk. Verzegnis had a free place for Pozzis, which counted 90 inhabitants, but the school was well done. There was a classroom on the ground floor, the kitchen and the bedroom on the first floor and there was a toilet halfway up, without water. The water was taken in the Arzino, in the nearby springs where the water was very pure. We didn’t even have electricity, we all had a lamp. The water was taken by my kids from 4th/5th grade in the Arzino. The school-class it was made up of 12 children, it was a multi-classes. I remember the kids from 5th grade, passed and called me at 6 am because before to start class they had to take their sheeps out to meadows. I remember when I went during the evenings sitting in the bench and I was knitting for my little brother. I also remember this pathway that at some point it cut the curve and you could see the school, the village and my students always came to meet me. </p>
         </div>
-    
-    
-         
-
-    
-    
+</div>
 </div>
     
 <!------------- CHAPTER 4 ---------------> 
     
-    
-<div class="chapter" id="chapter4">
+<div class="container u-max-full-width">    
+    <div class="row" id="chapter">
     <div class="columns four">&nbsp;</div>
         <div class="columns four">
             <h5> <i>Chapter IV</i></h5>
@@ -660,20 +628,16 @@
         </div>
     <div class="columns four">&nbsp;</div>
 </div>
-    
+</div>
     
 <div class="img-container" data-slideshow>
-     <div class="row" id="content">
+     <div class="row" id="projects">
         <div class="columns two">&nbsp;</div>
         <div class="columns two">
-           
-            <a href="https://vasentiero.org"><img src="images/va%20sentiero.jpg"></a>
-            
-            <a href="https://www.ctrlmagazine.it/libri/stiamo-scomparendo/"><img src="images/ctrl.jpeg"></a>
-            <a href="https://vimeo.com/ondemand/sottolestellefredde">
-        <img src="images/stelle%20fredde.jpg"></a>
+           <a href="https://vasentiero.org"><img src="images/va%20sentiero.jpg"></a>
+           <a href="https://www.ctrlmagazine.it/libri/stiamo-scomparendo/"><img src="images/ctrl.jpeg"></a>
+           <a href="https://vimeo.com/ondemand/sottolestellefredde"><img src="images/stelle%20fredde.jpg"></a>
             <a href="https://www.christopherthomson.net/the-new-wild-en/the-new-wild-it"><img src="images/new%20wild.jpeg"></a>
-           
         </div>
     </div>
     
