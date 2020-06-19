@@ -1,0 +1,203 @@
+<html lang="en">
+
+<head>
+    
+    <title>Desolate Alps</title>
+    <meta name="description" content="...">
+    <meta name="author" concent="Vanessa Deotto">
+    
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link href='https://cdn.knightlab.com/libs/soundcite/latest/css/player.css' rel='stylesheet' type='text/css'><script type='text/javascript' src='https://cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+<div class="container u-max-full-width" id="data">
+    <div class="row" >
+        <div class="columns two" id="ruotato">
+             <ul>
+                <li class="pop-gro"><p>population growth rate</p></li>
+                <li class="pop-den"><p>population density</p></li>
+                <li class="dem-dec"><p>demographic decline </p></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+        
+            <!---<div class="row" id="ruotato">
+            <ul>
+                <li class="pop-gro"><p>population growth rate</p></li>
+                <li class="pop-den"><p>population density</p></li>
+                <li class="dem-dec"><p>demographic decline </p></li>
+            </ul>
+    </div>
+    
+        
+    <div class="immagini">
+         <div class="one column">&nbsp;</div>
+         <div class="ten columns"> 
+                <img src="images/b&n.jpg"></div>
+         <div class="one column">&nbsp;</div>
+    </div>
+            
+    <div class="legenda" id="legenda1">
+        <ul>
+            <li class="data1"><p>1951-1981</p></li>
+            <li class="data2"><p>1981-2000</p></li>
+            <li class="data3"><p>2000-2012</p></li>
+        </ul>
+            </div>
+            
+    <div class="legenda" id="legenda2">
+        <ul>
+            <li class="10"><p> < 10 </p></li>
+            <li class="10-50"><p> > 10-50 </p></li>
+            <li class="50-100"><p> > 50-100 </p></li>
+            <li class="100-500"><p> > 100-500</p></li>
+            <li class="500"><p> > 500</p></li>
+        </ul>
+    </div>
+           
+    <div class="legenda" id="legenda3">
+        <ul>
+            <li class="5-1"><p> < -5% - > 1% </p></li>
+            <li class="0-1"><p> > 0% - 1%</p></li>
+            <li class="1-5"><p> >1% - >5%</p></li>
+        </ul>
+    </div>
+</div> --->
+    
+    
+<script>
+   $(document).ready(function() {
+       
+       $('.dem-dec').click(function() {
+           $('#legenda1 ul').css('display', 'block');
+           $('#legenda2 ul').css('display', 'none');
+           $('#legenda3 ul').css('display', 'none');
+           $('#immagini img').attr('src','images/b&n.jpg');
+           
+           $('pop-gro').css("color", 'light-grey');
+           $('pop-den').css("color", 'light-grey');
+       
+      
+       });
+    
+       $('.pop-den').click(function() {
+           $('#legenda1 ul').css('display', 'none');
+            $('#legenda2 ul').css('display', 'block');
+           $('#legenda3 ul').css('display', 'none');
+           $('#immagini img').attr('src','images/b&n.jpg');
+           
+           $('pop-gro').css("color", "light-grey");
+            $('dem-dec').css("color", "light-grey");
+       });
+       
+       $('.pop-gro').click(function() {
+           $('#legenda1 ul').css('display', 'none');
+           $('#legenda2 ul').css('display', 'none');
+           $('#legenda3 ul').css('display', 'block');
+           $('#immagini img').attr('src','images/b&n.jpg');
+           
+            $('pop-den').css("color", "light-grey");
+            $('dem-dec').css("color", "light-grey");
+       
+       })
+   });
+</script>   
+    
+ <script>
+   $(document).ready(function() {
+       $('.data1').click(function() {
+            $('#immagini img').attr('src','images/1951-1981.jpg');
+            $('data2').css("color", "light-grey");
+            $('data3').css("color", "light-grey");
+      
+       });
+    
+       $('.data2').click(function() {
+           $('#immagini img').attr('src', 'images/1981-2000.jpg');
+           $('data1').css("color", "light-grey");
+            $('data3').css("color", "light-grey");
+       });
+       
+       $('.data3').click(function() {
+           $('#immagini img').attr('src', 'images/2000-2012.jpg');
+           $('data1').css("color", "light-grey");
+           $('data2').css("color", "light-grey");
+       })
+   });
+</script>    
+    
+<script>
+   $(document).ready(function() {
+       $('.10').click(function() {
+            $('.immagini img').attr('src','images/10.jpg');
+           
+            $('10-50').css("color", "light-grey");
+            $('50-100').css("color", "light-grey");
+           $('...').css("color", "light-grey");
+            $('...').css("color", "light-grey");
+      
+       });
+    
+       $('.10-50').click(function() {
+           $('.immagini img').attr('src', 'images/10-50.jpg');
+           
+           $('...').css("color", "light-grey");
+            $('...').css("color", "light-grey");
+       });
+       
+       $('.50-100').click(function() {
+           $('.immagini img').attr('src', 'images/50-100.jpg');
+           
+           $('data1').css("color", "light-grey");
+           $('data2').css("color", "light-grey");
+       });
+       
+       $('.100-500').click(function() {
+           $('.immagini img').attr('src', 'images/100-500.jpg');
+           
+           $('data1').css("color", "light-grey");
+           $('data2').css("color", "light-grey");
+       });
+       
+       $('.500').click(function() {
+           $('.immagini img').attr('src', 'images/500.jpg');
+           
+           $('data1').css("color", "light-grey");
+           $('data2').css("color", "light-grey");
+       })
+   });
+</script> 
+    
+ <script>
+   $(document).ready(function() {
+       $('.5-1').click(function() {
+            $('.immagini img').attr('src','images/5-1.jpg');
+           
+            $('data2').css("color", "light-grey");
+            $('data3').css("color", "light-grey");
+      
+       });
+    
+       $('.0-1').click(function() {
+           $('.immagini img').attr('src', 'images/0-1.jpg');
+           
+           $('data1').css("color", "light-grey");
+            $('data3').css("color", "light-grey");
+       });
+       
+       $('.1-5').click(function() {
+           $('.immagini img').attr('src', 'images/1-5.jpg');
+           $('data1').css("color", "light-grey");
+           $('data2').css("color", "light-grey");
+       })
+   });
+</script> 
+</body>    
+</html>

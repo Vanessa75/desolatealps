@@ -119,7 +119,6 @@ a:hover{
 }
 
 #data{
-    max-width: 100vw;
     height: 800px;
     margin-top:100px;
     margin-bottom:100px;
@@ -130,7 +129,13 @@ a:hover{
     -moz-transform:rotate(-90deg);
     position: absolute;
     margin-top:380;
-    margin-left:-300
+    margin-left:-300;
+    width: 800px;
+    height: 40px;
+    
+    
+    
+    
 }
 
 #ruotato p{
@@ -268,15 +273,15 @@ h6 {
 
 
 #cities{
-    height:7800;
+    height:6050;
     
 }
 
 #cities img{
-    width: 600;
+    width: 100%;
     margin-top: 60;
     margin-bottom:-40;
-    margin-left: -120
+    
     
 }
 
@@ -291,8 +296,9 @@ div.sticky p{
     font-family: "garamond";
     max-width: 600px;
     font-size: 18;
-    padding: 60;
-    margin-left: -50;
+    padding-top: 60;
+    padding-bottom: 60; 
+    
     
 }
 
@@ -349,25 +355,36 @@ div.sticky p{
     margin-top: 500px;
     margin-bottom: 300px;
     
+    
 }
 
 #records p{
     font-family: "garamond";
     padding-top: 30;
     font-size: 18;
-    min-width: 400px;
+    max-width: 400px;
 }
 
 #records img{
     max-width: 400px;
-    padding-left:200;
 }
 
-#testimonianza2{
-    margin-top:1000;
-   
+#records2{
+    max-height: 2000px;
+    margin-top: 300px;
+    margin-bottom: 100px;
 }
 
+#records2 p{
+    font-family: "garamond";
+    padding-top: 30;
+    font-size: 18;
+    max-width: 400px;
+}
+
+#records2 img{
+    max-width: 400px;
+}
 .img-container{
     
     height: 500;
