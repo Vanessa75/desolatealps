@@ -1,9 +1,22 @@
-.row{
-    border: 1px
+html{
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    margin: 0px;
+head{
+    margin:0;
+    padding:0;
+}
+
+body{
+    margin:0;
+    padding: 0;
+}
+
+.u-max-full-width {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
 }
 
 .menu {
@@ -13,12 +26,13 @@ body {
     background-color: white; 
     z-index: 100;
     text-align: center;
-    padding: 7;
+    padding: 7px;
     overflow: hidden;
-    display:block;
+    display: block;
+    
 }
 
-li{
+.menu li{
     display: inline;
     padding: 100;
 }
@@ -34,6 +48,7 @@ a:hover{
     text-decoration: underline;
 }
 
+
 #head {
     height: 900;
     position: relative;
@@ -41,11 +56,13 @@ a:hover{
     background-image: url("../images/Alps.jpg");
     background-attachment: fixed;
     width: 100vw;
+    
 }
+
 
 #head h1{
     position: absolute;
-    top: 40%;
+    top: 30%;
     width: 100%;
     font-family: "garamond";
     color: floralwhite;
@@ -54,22 +71,18 @@ a:hover{
 
 #head h5{
     position: absolute;
-    top: 420;
+    top: 37%;
     width: 100%;
     font-family: "helvetica"; 
     color: floralwhite;
     font-size: 12px;
 }
 
-.u-max-full-width{
-    width: 100%;
-}
-
 #introduction{
     margin:auto;
     max-width: 700px;
     max-height: 800px;
-    padding: 60px;
+    padding: 30px;
 }
 
 #introduction p{
@@ -77,7 +90,6 @@ a:hover{
     max-width: 700px;
     font-size: 18;
 }
-
 
 .chapter {
   height: 850px;
@@ -107,8 +119,8 @@ a:hover{
 #content {
     margin:auto;
     max-width: 700px;
-    height: 400px;
-    padding: 60px;
+    height: 500px;
+    padding: 30px;
     margin: auto;
 }
 
@@ -124,73 +136,51 @@ h6 {
     text-align: left;
 }
 
-/*
-#ruotato{
-    -webkit-transform:rotate(-90deg);
-    -moz-transform:rotate(-90deg);
-    position: absolute;
-    margin-top:380;
-    margin-left:-350;
-    width: 800px;
-    height: 40px;
-}
-
-#ruotato p{
-    font-family: "helvetica";
-    font-size: 18px;
-    cursor: pointer;
-    color: black;
-    display: inline;
-}
-
-
-#ruotato p:hover{
-    text-decoration: underline;
-    color: black;
-}
-
-#ruotato p:active{
-    text-decoration: underline;
-    color: black;
-
-}
-
-#ruotato ul li{
-    padding: 0;
-    margin: 50;
-    
-}*/
-
 
 #alpi{
-    margin-top: 80px;
-    height:900px;
-    max-width: 3000px
+    max-height: 1000px;
 
 }
 
 #menudati {
-    margin-top: 60px;
     max-width: 100vw;
     text-align: center;
+   
 }
 
 #menudati p{
+    font-family: "helvetica";
     display: inline;
-    margin: -50px;
     cursor: pointer;
+    
+    
+}
+
+#menudati ul{
+     list-style-type: none;
+   
+}
+
+#menudati li{
+    display: inline;
+    margin: 20px;
+    border: solid 1px black;
+    width: 190px;
+    height:25px;
+    display: inline-block;
+
+    
     
 }
 
 .immagini img{
     width: 100%;
-    margin-top: 60px;
 }
+
 
 .info{
     text-align:right;
-    margin-top: -200px;
-    
+    margin-top: -150px;
 
 }
 
@@ -198,16 +188,24 @@ h6 {
     font-family: "helvetica";
     font-size: 12px;
     display: none;
-    padding-right: 20px;
+    padding-right: 5px;
     
     
 }
 
 .legenda{
     text-align: right;
-    margin-top: -170px;
+    margin-top: -130px;
+}
 
+
+.legenda ul{
+     list-style-type: none;
     
+}
+
+.legenda li{
+    display: inline;
 }
 
 .legenda p{
@@ -230,20 +228,20 @@ h6 {
 }
 
 #legenda1 ul{
-    display: none;
+    display:none;
 } 
 
 #legenda1 ul li{
-    padding:30;
+    margin:8px;
+
 }
 
 #legenda2 ul{
-    display:none
+    display:none;
 }
 
 #legenda2 ul li{
-    margin:20;
-    padding:0;
+    margin:8px;
 
 }
 
@@ -253,10 +251,12 @@ h6 {
 }
 
 #legenda3 ul li{
-    margin:20;
-    padding:0;
+    margin:8;
 }
 
+#chapter2{
+    margin-top: 50px;
+}
 
 #names{
     max-height: 1000px;
@@ -265,8 +265,8 @@ h6 {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	align-items: flex-start;
-	align-content:flex-start;
+	align-items: center;
+	align-content:center; 
     padding-left: 150px;
     
 }
@@ -294,16 +294,15 @@ h6 {
     cursor: pointer;
 }
 
-
 #cities{
-    height:6050;
+    max-height:6050;
     
 }
 
 #cities img{
     width: 100%;
-    margin-top: 60;
-    margin-bottom:-40;
+    margin-top: 60px;
+    margin-bottom:-40px;
     
     
 }
@@ -336,7 +335,7 @@ div.sticky p{
 	flex-wrap: wrap;
 	align-items:center;
 	align-content:center; 
-    padding-left: 30px;
+     padding-left: 30px;
     padding-top: 60px;
 
     
@@ -365,17 +364,18 @@ div.sticky p{
 }
 
 .thumbnail p{
-    width: 220;
-    height:160;
+    width: 150;
+    height: 100;
     position: relative;
-    top: -203px;
+    top: -140px;
     margin:20;
-    font-size: 12;
+    font-size: 10px;
+    line-height: 12px;
 }
 
-
 .records{
-  margin-top: 300px; 
+  margin-top: 200px; 
+    margin-bottom: 100px;
     
 }
 
@@ -383,7 +383,7 @@ div.sticky p{
     font-family: "garamond";
     padding-top: 30;
     font-size: 18;
-    max-width: 300px;
+    max-width: 500px;
 }
 
 .records img{
@@ -392,20 +392,27 @@ div.sticky p{
 }
 
 
+#records1 img{
+    margin-left: 50px;
+}
+
 #records2 p{
-    text-align: right;
+    text-align: left;
 }
 
 #records2 img{
     max-width: 400px;
 }
+
 .img-container{
     
     height: 500;
     overflow: hidden;
     position: relative;
-    width:600;
-    margin: 150;
+    width:600px;
+    margin:150px;
+    
+    
 }
 
 .img-container img{
@@ -418,6 +425,7 @@ div.sticky p{
     position: absolute;
     top:0;
     z-index: -1;
+    
 }
 
 .img-container img.next{
@@ -443,19 +451,86 @@ div{
 }
 
 
-@media (min-width: 320px){
+@media only screen and (max-width: 900px){
     .menu{
         display: none;
     }
-}
-
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {
-    .menu{
-        display: block;
+    
+    #menudati p{
+        font-size:75%;
     }
+    
+    #menudati li{
+    border: solid 1px black;
+    width: 190px;
+    height:20px;
+    display: inline-block;
+    margin: 5px;
+    
 }
+    
+    .info{
+        margin: 0;
+    
+}
+    
+    .info p{
+        font-size: 10px;
+    }
+    
+    .legenda{
+         margin-top: -20px;
+    }
 
-
-
-
+    .legenda p{
+    font-size: 75%;
+        
+} 
+    #names{
+    max-height: 3000px;
+    padding: 0;
+    
+    
+  } 
+    
+    #names h5{
+        width: 40%;
+    margin-left: 35px;
+    }
+    
+    #gallery {
+        padding:0;
+    }
+    
+    .thumbnail {
+    width: 180px;
+    height: 120px;
+    
+    
+}
+    .thumbnail img{
+    width:150px;
+    height: 100px;
+    }
+    
+    .records img{
+        margin-bottom:30px;
+    }
+    
+    #records1 img{
+        margin:0;
+    }
+    
+    .img-container{
+    height: 300px;
+    margin:37px; 
+    padding: 0;
+    width:300;
+    }
+    
+    .img-container img{
+    width: 300px;
+    height: 200px;
+    }
+    
+}
