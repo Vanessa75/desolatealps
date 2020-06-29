@@ -3,6 +3,7 @@
 <head>
     
 <title>Desolate Alps</title>
+    
 <meta name="description" content="...">
 <meta name="author" concent="Vanessa Deotto">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,8 +11,6 @@
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/skeleton.css">
 <link rel="stylesheet" href="css/styledef.css">
-    
-<link href='https://cdn.knightlab.com/libs/soundcite/latest/css/player.css' rel='stylesheet' type='text/css'><script type='text/javascript' src='https://cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>
     
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     
@@ -66,7 +65,7 @@
         </div>
      </div>
     
-    <div class="container">
+<div class="container">
     <div class="row" id="content">
         <div class="columns one">&nbsp;</div>
         <div class="columns ten">
@@ -78,78 +77,76 @@
         </div>
         <div class="column one">&nbsp;</div>
     </div>
- </div>    
+</div>    
     
-  <div class="container" id="alpi">
- <div class="row" >
+<div class="container" id="alpi">
+    <div class="row" >
        <div class="columns twelve" id="menudati">
           <ul>
                 <li class="pop-gro"><p>population growth rate</p></li>
                 <li class="pop-den"><p>population density</p></li>
                 <li class="dem-dec"><p>demographic decline </p></li>
             </ul>  
-</div>    
-</div> 
+        </div>    
+    </div> 
 
       
 
-       <div class="row">
+    <div class="row">
         <div class="columns twelve immagini">
-        <img src="images/b&n.jpg">
+            <img src="images/b&n.jpg">
         </div>
         
-</div>
+    </div>
 
       
-      <div class="row">
-   <div class="twelve columns info">
-    <div class="info1">
-    <p><i>years</i></p>
-    </div>
-<div class="info2">
-    <p><i>residents per km2 - 2013</i></p></div>
-    
-    <div class="info3">
-    <p><i>10 years annual average (%) - 2017</i></p></div>
-</div>
-</div>
-    
     <div class="row">
-    <div class="twelve columns" >
-        
-        <div class="legenda" id="legenda1">
-            
-        <ul>
-            <li class="data1"><p>1951-1981</p></li>
-            <li class="data2"><p>1981-2000</p></li>
-            <li class="data3"><p>2000-2012</p></li>
-        </ul>
+        <div class="twelve columns info">
+            <div class="info1">
+                <p><i>years</i></p>
             </div>
             
-    <div class="legenda" id="legenda2">
-        
-        <ul>
-            <li class="10"><p> < 10 </p></li>
-            <li class="10-50"><p> > 10-50 </p></li>
-            <li class="50-100"><p> > 50-100 </p></li>
-            <li class="100-500"><p> > 100-500</p></li>
-            <li class="500"><p> > 500</p></li>
-        </ul>
+            <div class="info2">
+                <p><i>residents per km2 - 2013</i></p>
+            </div>
+    
+            <div class="info3">
+                <p><i>10 years annual average (%) - 2017</i></p>
+            </div>
+        </div>
     </div>
+    
+    <div class="row">
+        <div class="twelve columns" >
+            <div class="legenda" id="legenda1">
+                <ul>
+                    <li class="data1"><p>1951-1981</p></li>
+                    <li class="data2"><p>1981-2000</p></li>
+                    <li class="data3"><p>2000-2012</p></li>
+                </ul>
+            </div>
+            
+            <div class="legenda" id="legenda2">
+                <ul>
+                    <li class="10"><p> < 10 </p></li>
+                    <li class="10-50"><p> > 10-50 </p></li>
+                    <li class="50-100"><p> > 50-100 </p></li>
+                    <li class="100-500"><p> > 100-500</p></li>
+                    <li class="500"><p> > 500</p></li>
+                </ul>
+            </div>
            
-    <div class="legenda" id="legenda3">
-        <ul>
-            <li class="5-1"><p> < -5% - > 1% </p></li>
-            <li class="0-1"><p> > 0% - 1%</p></li>
-            <li class="1-5"><p> >1% - >5%</p></li>
-        </ul>
-    </div>
-</div>
+            <div class="legenda" id="legenda3">
+                <ul>
+                    <li class="5-1"><p> < -5% - > 1% </p></li>
+                    <li class="0-1"><p> > 0% - 1%</p></li>
+                    <li class="1-5"><p> >1% - >5%</p></li>
+                </ul>
+            </div>
+        </div>
     
     
-        </div> 
-    
-      
+    </div> 
 </div>   
     
     
@@ -159,78 +156,73 @@
        
        $('.dem-dec').click(function() {
            $('#legenda1 ul').css('display', 'block');
-        
-            $('#legenda2 ul').css('display', 'none');
-            $('#legenda3 ul').css('display', 'none');
+           $('#legenda2 ul').css('display', 'none');
+           $('#legenda3 ul').css('display', 'none');
           
            $('.immagini img').attr('src','images/1951-1981.jpg');
            
-            $('.dem-dec p').css("color", 'black');
+           $('.dem-dec p').css("color", 'black');
            
            $('.pop-den p').css("color", 'lightgrey');
            $('.pop-gro p').css("color", 'lightgrey');
            $('.pop-den p').css("color", 'lightgrey');
            
            $('.data1 p').css("color", "black");
-             $('.data2 p').css("color", "lightgrey");
+           $('.data2 p').css("color", "lightgrey");
            $('.data3 p').css("color", "lightgrey");
            
-              $('.info1 p').css("display", "block");
+           $('.info1 p').css("display", "block");
            
-         $('.info2 p').css("display", "none");
-            $('.info3 p').css("display", "none");
+           $('.info2 p').css("display", "none");
+           $('.info3 p').css("display", "none");
        
-           
-      
-       });
+    });
     
-       $('.pop-den').click(function() {
+    $('.pop-den').click(function() {
            $('#legenda1 ul').css('display', 'none');
-           
-            $('#legenda2 ul').css('display', 'block');
+           $('#legenda2 ul').css('display', 'block');
            $('#legenda3 ul').css('display', 'none');
            
            $('.immagini img').attr('src','images/10.jpg');
            
-            $('.pop-den p').css("color", 'black');
+           $('.pop-den p').css("color", 'black');
            
            $('.pop-gro p').css("color", "lightgrey");
-            $('.dem-dec p').css("color", "lightgrey");
+           $('.dem-dec p').css("color", "lightgrey");
            
-              $('.10 p').css("color", "black");
+           $('.10 p').css("color", "black");
            
            $('.10-50 p').css("color", "lightgrey");
            $('.50-100 p').css("color", "lightgrey");
            $('.100-500 p').css("color", "lightgrey");
            $('.500 p').css("color", "lightgrey");
            
-            $('.info2 p').css("display", "block");
+           $('.info2 p').css("display", "block");
            
-         $('.info1 p').css("display", "none");
-            $('.info3 p').css("display", "none");
-       });
+           $('.info1 p').css("display", "none");
+           $('.info3 p').css("display", "none");
+    });
        
        $('.pop-gro').click(function() {
            $('#legenda1 ul').css('display', 'none');
-           
            $('#legenda2 ul').css('display', 'none');
            $('#legenda3 ul').css('display', 'block');
            
            $('.immagini img').attr('src','images/5-1.jpg');
            
-            $('.pop-gro p').css("color", 'black');
-            $('.pop-den p').css("color", "lightgrey");
-            $('.dem-dec p').css("color", "lightgrey");
+           $('.pop-gro p').css("color", 'black');
+           $('.pop-den p').css("color", "lightgrey");
+           $('.dem-dec p').css("color", "lightgrey");
            
            $('.5-1 p').css("color", "black");
            
-            $('.0-1 p').css("color", "lightgrey");
-            $('.1-5 p').css("color", "lightgrey");
+           $('.0-1 p').css("color", "lightgrey");
+           $('.1-5 p').css("color", "lightgrey");
            
-            $('.info3 p').css("display", "block");
+           $('.info3 p').css("display", "block");
            
-         $('.info2 p').css("display", "none");
-            $('.info1 p').css("display", "none");
+           $('.info2 p').css("display", "none");
+           $('.info1 p').css("display", "none");
        })
    });
 </script>   
@@ -239,25 +231,22 @@
    $(document).ready(function() {
        $('.data1').click(function() {
             $('.immagini img').attr('src','images/1951-1981.jpg');
-           
-           $('.data1 p').css("color", "black");
-             $('.data2 p').css("color", "lightgrey");
-           $('.data3 p').css("color", "lightgrey");
-           
-      
-       });
+            $('.data1 p').css("color", "black");
+            $('.data2 p').css("color", "lightgrey");
+            $('.data3 p').css("color", "lightgrey");
+        });
     
        $('.data2').click(function() {
            $('.immagini img').attr('src', 'images/1981-2000.jpg');
-          $('.data2 p').css("color", "black");
-             $('.data1 p').css("color", "lightgrey");
+           $('.data2 p').css("color", "black");
+           $('.data1 p').css("color", "lightgrey");
            $('.data3 p').css("color", "lightgrey");
        });
        
        $('.data3').click(function() {
            $('.immagini img').attr('src', 'images/2000-2012.jpg');
-          $('.data3 p').css("color", "black");
-             $('.data2 p').css("color", "lightgrey");
+           $('.data3 p').css("color", "black");
+           $('.data2 p').css("color", "lightgrey");
            $('.data1 p').css("color", "lightgrey");
         
        })
@@ -268,21 +257,18 @@
    $(document).ready(function() {
        $('.10').click(function() {
             $('.immagini img').attr('src','images/10.jpg');
-           
-           $('.10 p').css("color", "black");
-           
-           $('.10-50 p').css("color", "lightgrey");
-           $('.50-100 p').css("color", "lightgrey");
-           $('.100-500 p').css("color", "lightgrey");
-           $('.500 p').css("color", "lightgrey");
+            $('.10 p').css("color", "black");
+            $('.10-50 p').css("color", "lightgrey");
+            $('.50-100 p').css("color", "lightgrey");
+            $('.100-500 p').css("color", "lightgrey");
+            $('.500 p').css("color", "lightgrey");
        });
     
        $('.10-50').click(function() {
            $('.immagini img').attr('src', 'images/10-50.jpg');
-           
-          $('.10-50 p').css("color", "black");
-            $('.10 p').css("color", "lightgrey");
-             $('.50-100 p').css("color", "lightgrey");
+           $('.10-50 p').css("color", "black");
+           $('.10 p').css("color", "lightgrey");
+           $('.50-100 p').css("color", "lightgrey");
            $('.100-500 p').css("color", "lightgrey");
            $('.500 p').css("color", "lightgrey");
            
@@ -290,31 +276,25 @@
        
        $('.50-100').click(function() {
            $('.immagini img').attr('src', 'images/50-100.jpg');
-           
-          $('.50-100 p').css("color", "black");
-           
-          $('.10-50 p').css("color", "lightgrey");
-          $('.10 p').css("color", "lightgrey");
-          $('.100-500 p').css("color", "lightgrey");
-          $('.500 p').css("color", "lightgrey");
+           $('.50-100 p').css("color", "black");
+           $('.10-50 p').css("color", "lightgrey");
+           $('.10 p').css("color", "lightgrey");
+           $('.100-500 p').css("color", "lightgrey");
+           $('.500 p').css("color", "lightgrey");
        });
        
        $('.100-500').click(function() {
            $('.immagini img').attr('src', 'images/100-500.jpg');
-           
-          $('.100-500 p').css("color", "black");
-           
-          $('.10-50 p').css("color", "lightgrey");
-          $('.10 p').css("color", "lightgrey");
-          $('.50-100 p').css("color", "lightgrey");
-          $('.500 p').css("color", "lightgrey");
+           $('.100-500 p').css("color", "black");
+           $('.10-50 p').css("color", "lightgrey");
+           $('.10 p').css("color", "lightgrey");
+           $('.50-100 p').css("color", "lightgrey");
+           $('.500 p').css("color", "lightgrey");
        });
        
        $('.500').click(function() {
            $('.immagini img').attr('src', 'images/500.jpg');
-           
            $('.500 p').css("color", "black");
-           
            $('.10-50 p').css("color", "lightgrey");
            $('.10 p').css("color", "lightgrey");
            $('.50-100 p').css("color", "lightgrey");
@@ -327,9 +307,7 @@
    $(document).ready(function() {
        $('.5-1').click(function() {
             $('.immagini img').attr('src','images/5-1.jpg');
-           
             $('.5-1 p').css("color", "black");
-           
             $('.0-1 p').css("color", "lightgrey");
             $('.1-5 p').css("color", "lightgrey");
       
@@ -337,20 +315,16 @@
     
        $('.0-1').click(function() {
            $('.immagini img').attr('src', 'images/0-1.jpg');
-           
            $('.0-1 p').css("color", "black");
-           
            $('.5-1 p').css("color", "lightgrey");
            $('.1-5 p').css("color", "lightgrey");
        });
        
        $('.1-5').click(function() {
            $('.immagini img').attr('src', 'images/1-5.jpg');
-           
            $('.1-5 p').css("color", "black");
-           
-            $('.0-1 p').css("color", "lightgrey");
-            $('.5-1 p').css("color", "lightgrey");
+           $('.0-1 p').css("color", "lightgrey");
+           $('.5-1 p').css("color", "lightgrey");
        })
    });
 </script> 
@@ -371,9 +345,8 @@
 </div>
     
 <div class="container u-max-full-width">
-<div class="row">
-    
-<div class="columns twelve" id="names">
+    <div class="row">
+        <div class="columns twelve" id="names">
     
     <h5>Antrona
     <p><i>inhabited until:</i> 1642</p><p><i>abandonment cause: </i>unknown</p></h5>
@@ -389,7 +362,7 @@
     
     <h5>Brugosecco  <p><i>inhabited until:</i> 1960</p><p><i>abandonment cause: </i>emigration</p> </h5>
                
-    <h5>Ca’ de Ferrè <p><i>inhabited until:</i> 1950</p><p><i>abandonment cause:</i>depopulation</p></h5>
+    <h5>Ca’ de Ferrè <p><i>inhabited until:</i> 1950</p><p><i>abandonment cause: </i>depopulation</p></h5>
                 
     <h5>Canate di Marsiglia <p><i>inhabited until:</i> 1960</p><p><i>abandonment cause: </i>unknown</p></h5>
                 
@@ -477,7 +450,7 @@
     <p><i>inhabited until:</i> 1950n</p>
     <p><i>abandonment cause: </i>unfavorable position</p></h5> 
         
-   <h5>Pattine di Gosaldo
+    <h5>Pattine di Gosaldo
     <p><i>inhabited until:</i> unknown</p>
     <p><i>abandonment cause: </i>unknown</p></h5>
     
@@ -520,7 +493,7 @@
 </div>
 </div>
 
-    <script>
+<script>
     $(document).ready(
     function() {
         $('#names h5').hover(
@@ -537,7 +510,7 @@
         
 </script>
     
-    <div class="container">
+<div class="container">
     <div class="row" id="cities">
         <div class="columns six">
             <img src="images/antrona.png">
@@ -561,8 +534,7 @@
         
         <div class="columns six sticky">
             <p>The depopulation of the Alps caused the increase of the number of phantom cities, abandoned cities mostly located on inaccessible areas which once housed solid Alpine communities. Today, these cities, are a cluster of dilapidated walls where nature takes over everything that has been made by humans’ hands, erasing any trace of it. Moreover, the remaining globalized world has always denied the Alpine culture/environment/history, causing a distorted perception of the Alps, considered as <i>“not-places”</i> or <i>“open museums”</i> characterized by a <i>“folk”</i> way of living, where everything is specially built.
-            </p>
-            
+            But does <i>Alpine Culture</i> exist? The Alps are divided into several territories characterized by unique peculiarities. All the different populations have developed a specific culture in relation to the environment, with different traditions and dialects. Nevertheless, it is possible to consider the Alpine Culture also as a common culture because of its similarities which are found throughout the Alps. Moreover, this unique culture is often based on the most advantageous and respectful way of exploiting the territory by facing the difficulties that the mountain brings in the daily life of those who experience it. The <i>Alpine Culture</i> is a set of aspects handed down from generation to generation where time is still marked by the passage of the sun and where even the single object could assume an extreme utility, going beyond the simple use.</p>
         </div>
     </div>
  </div>
@@ -572,21 +544,20 @@
     
 
 <div class="container u-max-full-width">        
-<div class="row chapter" id="chapter3">
+    <div class="row chapter" id="chapter3">
             <div class="columns four">&nbsp;</div>
             <div class="columns four">
                 <h5> <i>Chapter III</i></h5>
                 <h3> Alpine Archive</h3>   
             </div>
             <div class="columns four">&nbsp;</div>
-</div>
+    </div>
 </div>
   
-    <div class="container u-max-full-width">    
+<div class="container u-max-full-width">    
     <div class="row">
-    <div class="columns twelve" id="gallery">
-   
-        <div class="thumbnail">
+        <div class="columns twelve" id="gallery">
+    <div class="thumbnail">
         <img src="images/fieno.png">
         <p><b>Haymaking /</b> ritual that involved the whole family indistinctly of age and sex. The hay was the first livelihood for animals. </p>
     </div>
@@ -596,11 +567,11 @@
     </div> 
     <div class="thumbnail">
         <img src="images/formaggio.png">
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         <p><b>Cheesemaker / </b>worker involved in the transformation of milk into butter and cheese, one of the few foods available at high altitudes.</p>
     </div>
     <div class="thumbnail">
         <img src="images/vaso.png">
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         <p><b>Spinning pot /</b> ancient wine container widespread in the Cusian territory with inscriptions in the Lepontius alphabet which attest to the use of the vase as a wine container by the Celtic populations inhabiting the territory.</p>
     </div>
     <div class="thumbnail">
         <img src="images/krampus.png">
@@ -624,7 +595,7 @@
     </div>
     <div class="thumbnail">
         <img src="images/montagna.png">
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         <p><b>Mountain /</b> unknown land, a place inhabited by benign and malignant presences and often a source of punishment for the man who has transgressed the rules of ethics or hospitality.</p>
     </div>
     <div class="thumbnail">
         <img src="images/orso.png">
@@ -669,9 +640,8 @@
         <img src="images/malga.png">
          <p><b>Alpeggio /</b> agro-zootechnical activity that takes place in the mountains during the summer months between a minimum altitude of 600 m a.s.l. and a maximum of 2500-2700 <i> montication.</i></p>
     </div>
-        
-       </div> 
-    </div>
+</div> 
+</div>
 </div>
         
 <script>
@@ -691,28 +661,27 @@
         
 </script>
     
-    <div class="container"> 
+<div class="container"> 
     <div class="row records">
         <div class="columns six" id="records1">
             <audio id="testimonianza1" controls width="250" type="audio/mp3" src="images/Mirella%20tagliato.mp3" ></audio>
             <p> <b>Mirella, born in 1940, Collina (UD)</b><br>
-            When I opened my shop the houses were full of people, now they are all empty. They arrive during the summer on vacation few days seldom. Otherwise the village is dead, we can say. We went from door to door, now before to go find someone you first have to call, ask if they are available and ring the bell, also the time and then you can enter. Instead, when I was young we came out of one door we entered another one. The game of stone!! I do not know how is called… Campana! Oh yes, outside a house <i>(dialect) there was a cement road</i> and then we jumped singing <i>(dialect song)</i>. Collinetta have 20 people left and they were 300, Collina more or less the same of Collinetta. We have only mountains, we see the mountains… We mowed the hay, we went up to the mountains, we worked, worked worked worked a lot… the pannier on the shoulders. <i>(dialect) when so? *laugh* shut up *laugh*</i>. We mowed the hay, we raked, we made sheaves… those were days, not to be forgotten.</p>
+            When I opened my shop the houses were full of people, now they are all empty. They arrive during the summer on vacation few days seldom. Otherwise the village is dead, we can say. We went from door to door, now before to go meet someone you first have to call, ask if they are available and ring the bell, also the time and then you can enter. Instead, when I was young we came out from one door we entered another one. The game of stones!! I do not know how is called… Campana! Oh yes, outside a house <i>(dialect) there was a cement road</i> and then we jumped singing <i>(dialect song)</i>. Collinetta has 20 people left and they were 300, Collina more or less the same of Collinetta. We have only mountains, we see the mountains… We mowed the hay, we went up to the mountains, we worked, worked worked worked a lot… the pannier on the shoulders. <i>(dialect) when so? *laugh* shut up *laugh*</i>. We mowed the hay, we raked, we made sheaves… those were days, not to be forgotten.</p>
         </div>
     
     
-    <div class="columns six" id="records1">
-        <img src="images/covoni.jpeg">
+        <div class="columns six" id="records1">
+            <img src="images/covoni.jpeg">
+        </div>
     </div>
-</div>
     
   <div class="row records">
-      
       <div class="columns six" id="records2">
-        <img src="images/annette.jpeg">
+            <img src="images/annette.jpeg">
       </div>
-        <div class="columns six" id="records2">       
-        <audio id="testimonianza2" controls width="250" type="audio/mp3" src="images/annette%20tagliato.mp3"></audio> 
-        <p><b> Annette, born in 1928, Milano</b><br>
+      <div class="columns six" id="records2">       
+            <audio id="testimonianza2" controls width="250" type="audio/mp3" src="images/annette%20tagliato.mp3"></audio> 
+            <p><b> Annette, born in 1928, Milano</b><br>
         I graduated in 1947 and that time they proclaimed the first contest due to the fact that all the teachers who worked during the war had not a tenured position. I participated to this contest and by combination I won, I was the 575th. Only the most uncomfortable Carnia’s places remained, for example Buttea, because at that time we had to go always by walk. Verzegnis had a free place for Pozzis, which counted 90 inhabitants, but the school was well done. There was a classroom on the ground floor, the kitchen and the bedroom on the first floor and there was a toilet halfway up, without water. The water was taken in the Arzino, in the nearby springs where the water was very pure. We didn’t even have electricity, we all had a lamp. The water was taken by my kids from 4th/5th grade in the Arzino. The school-class it was made up of 12 children, it was a multi-classes. I remember the kids from 5th grade, passed and called me at 6 am because before to start class they had to take their sheeps out to meadows. I remember when I went during the evenings sitting in the bench and I was knitting for my little brother. I also remember this pathway that at some point it cut the curve and you could see the school, the village and my students always came to meet me. </p>
         </div>
 </div>
@@ -726,24 +695,39 @@
     <div class="columns four">&nbsp;</div>
         <div class="columns four">
             <h5> <i>Chapter IV</i></h5>
-            <h3> Projects</h3>   
+            <h3> The New Mountaineers</h3>   
         </div>
     <div class="columns four">&nbsp;</div>
 </div>
 </div>
     
+    
+<div class="container">
+    <div class="row">
+      <div class="columns one">&nbsp;</div>
+        <div class="columns ten" id="text">
+            <p> Despite every attempt to enhance "popular culture", words such as "mountain man", "country", "farmer" maintain their negative charge, their meaning of backwardness, stupidity, inability to adapt to the world that changes. Nevertheless, <i>new mountaineers </i>, or <i>amenity migrants</i>, are settling more and more on the alpine areas. People who knowingly undertake a new life in the mountains, who abandon cities located in external areas, and who therefore can contribute to revitalization and maintenance of peripheral mountain settlements, generating a population exchange between those who leave the lands and those who settle. The newcomers bring renovation and counteract the aged population and the drop of births, strengthening the cultural and social structures of the mountain community. Below you can find some cultural and social projects that have somehow given visibility to the forgotten Alps and / or contrasted the lack of credibility by creating new opportunities.</p> 
+       </div> 
+    <div class="columns one">&nbsp;</div>  
+    </div>
+</div>
+    
 <div class="img-container" data-slideshow>
      <div class="row" id="projects">
-        <div class="columns two">&nbsp;</div>
-        <div class="columns two">
-           <a href="https://vasentiero.org"><img src="images/va%20sentiero.jpg"></a>
-           <a href="https://www.ctrlmagazine.it/libri/stiamo-scomparendo/"><img src="images/ctrl.jpeg"></a>
-           <a href="https://vimeo.com/ondemand/sottolestellefredde"><img src="images/stelle%20fredde.jpg"></a>
-            <a href="https://www.christopherthomson.net/the-new-wild-en/the-new-wild-it"><img src="images/new%20wild.jpeg"></a>
+         <div class="columns two">&nbsp;</div>
+         <div class="columns eight">
+                <a href="https://vasentiero.org"><img src="images/va%20sentiero.jpg"></a>
+                <a href="http://www.stazioneditopolo.it/24h-2020/index.html"><img src="images/Topolo-Stazione.jpg"></a>
+                <a href="https://www.ctrlmagazine.it/libri/stiamo-scomparendo/"><img src="images/ctrl.jpeg"></a>
+                <a href="https://vimeo.com/ondemand/sottolestellefredde"><img src="images/stelle%20fredde.jpg"></a>
+                <a href="https://www.christopherthomson.net/the-new-wild-en/the-new-wild-it"><img src="images/new%20wild.jpeg"></a>
         </div>
+        <div class="columns two">&nbsp;</div>
     </div>
+</div> 
     
-</div>
+    
+
     
 <script>
     class Slideshow {
@@ -814,7 +798,13 @@ $(document).ready(function() {
 });
     
 </script>  
+    
 </body>  
     
+<footer>
+ 
+<i>Desolate Alps</i> a project by Vanessa Deotto for Web and Media Design course supervised by Matteo Moretti. Free University of Bolzano, 2020.
+    
+</footer>   
     
     
