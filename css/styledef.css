@@ -131,6 +131,11 @@ a:hover{
 h6 {
     font-size: 09px;
     text-align: left;
+    
+}
+
+h6 a{
+    color: black;
 }
 
 
@@ -316,7 +321,7 @@ div.sticky p{
     font-family: "garamond";
      max-width: 700px;
     font-size: 18;
-    padding-top: 30;
+    padding-top: 35;
     
     
     
